@@ -55,7 +55,7 @@ const HomePage = ({ publications, portfolios, affiliations }) => {
       >
         <div className="container mx-auto sm:px-6 lg:px-8 mb-24">
           <HomeTitle />
-          <div className="mt-56 space-y-10">
+          <div className="mt-56 space-y-16">
             <Affiliations affiliations={affiliations} />
             <Publications publications={publications} />
             <PortfolioCard portfolios={portfolios} />
