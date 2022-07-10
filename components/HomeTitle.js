@@ -1,6 +1,13 @@
 const HomeTitle = () => {
   return (
-    <div className="flex flex-column items-center justify-between w-full">
+    <div className="flex sm:flex-row flex-col items-center justify-between sm:mx-0 mx-2">
+      <div className="flex items-center sm:hidden">
+        <img
+          className="inline-block h-64 w-64 rounded-full"
+          src="/images/anna.jpeg"
+          alt=""
+        />
+      </div>
       <div>
         <div className="text-3xl">Public Health, Epidemiology, Medicine</div>
         <div className="mt-2">
@@ -41,7 +48,7 @@ const HomeTitle = () => {
           </div>
         </div>
       </div>
-      <div className="flex items-center">
+      <div className="flex items-center sm:inline-block hidden">
         <img
           className="inline-block h-64 w-64 rounded-full"
           src="/images/anna.jpeg"
