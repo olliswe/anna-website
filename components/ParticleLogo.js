@@ -24,6 +24,8 @@ const ParticleLogo = ({ spring, entered }) => {
         image: document.all.aflogo,
         id: "foobar",
         particleGap: 2,
+        maxWidth: "70%",
+        maxHeight: "70%",
       });
       createdCanvas.current = true;
     }
@@ -35,7 +37,9 @@ const ParticleLogo = ({ spring, entered }) => {
         src="/images/AFcolor.png"
         className="next-particle"
         id="aflogo"
-        style={{ transform: spring.o.to((o) => `scale(${1 - o / 1.2})`) }}
+        style={{
+          transform: spring.o.to((o) => `scale(${0.75 - o / 1.5})`),
+        }}
       />
     </>
   );

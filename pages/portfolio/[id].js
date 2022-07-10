@@ -14,7 +14,7 @@ export default function Portfolio({ portfolio }) {
           </div>
           <div>
             <img src={portfolio.imageUrl} alt="" className="float-right w-96" />
-            <article className="prose lg:prose-xl px-6 py-6">
+            <article className="prose px-6 py-6">
               <PortableText value={portfolio.text} />
             </article>
           </div>
@@ -35,7 +35,7 @@ export async function getStaticPaths() {
 
   // We'll pre-render only these paths at build time.
   // { fallback: false } means other routes should 404.
-  return { paths, fallback: false };
+  return { paths, fallback: true };
 }
 
 // This also gets called at build time

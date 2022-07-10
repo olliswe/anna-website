@@ -9,16 +9,20 @@ export default function Home(props) {
   return <HomePage {...props} />;
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const publications = await client.fetch(`*[_type == "publication"]`);
   const portfolios = await client.fetch(
     `*[_type == "portfolio"]{'imageUrl': image.asset->url, ...}`
+  );
+  const affiliations = await client.fetch(
+    `*[_type == "affiliation"]{'imageUrl': image.asset->url, ...} | order(order asc)`
   );
 
   return {
     props: {
       publications,
       portfolios,
+      affiliations,
     },
   };
 }

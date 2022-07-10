@@ -7,8 +7,9 @@ import clsx from "clsx";
 import HomeTitle from "./HomeTitle";
 import Publications from "./Publications";
 import PortfolioCard from "./PortfolioCard";
+import Affiliations from "./Affiliations";
 
-const HomePage = ({ publications, portfolios }) => {
+const HomePage = ({ publications, portfolios, affiliations }) => {
   const router = useRouter();
   const { enter } = router.query;
   const [entered, setEntered] = useState(false);
@@ -55,6 +56,7 @@ const HomePage = ({ publications, portfolios }) => {
         <div className="container mx-auto sm:px-6 lg:px-8 mb-24">
           <HomeTitle />
           <div className="mt-56 space-y-10">
+            <Affiliations affiliations={affiliations} />
             <Publications publications={publications} />
             <PortfolioCard portfolios={portfolios} />
           </div>

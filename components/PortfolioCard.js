@@ -2,8 +2,8 @@ import Link from "next/link";
 
 const PortfolioCard = ({ portfolios }) => {
   return (
-    <div className="bg-gray-200 overflow-hidden shadow sm:rounded-lg py-6 px-6">
-      <div className="text-lg">Portfolio</div>
+    <div className="bg-white overflow-hidden shadow rounded-lg py-6 px-6">
+      <div className="text-lg">Posts</div>
       <ul className="mt-2 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
         {portfolios.map((portfolio) => (
           <li

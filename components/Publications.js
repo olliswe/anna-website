@@ -1,6 +1,6 @@
 const Publications = ({ publications }) => {
   return (
-    <div className="bg-gray-200 overflow-hidden shadow sm:rounded-lg py-6">
+    <div className="bg-white overflow-hidden shadow rounded-lg py-6">
       <div className="px-4 sm:px-6 text-lg">Publications</div>
       <div className="px-4 pt-5 sm:px-6 text-m">Journal Articles</div>
       <div className="px-4 sm:px-6 pt-2">
