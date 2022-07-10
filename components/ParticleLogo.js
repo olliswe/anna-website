@@ -39,6 +39,7 @@ const ParticleLogo = ({ spring, entered }) => {
         id="aflogo"
         style={{
           transform: spring.o.to((o) => `scale(${0.75 - o / 1.5})`),
+          display: "none",
         }}
       />
     </>
